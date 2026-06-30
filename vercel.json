@@ -1,4 +1,18 @@
 {
+  "version": 2,
   "cleanUrls": true,
-  "trailingSlash": false
+  "trailingSlash": false,
+  "builds": [
+    { "src": "index.html", "use": "@vercel/static" },
+    { "src": "about/index.html", "use": "@vercel/static" },
+    { "src": "work/index.html", "use": "@vercel/static" },
+    { "src": "news/index.html", "use": "@vercel/static" },
+    { "src": "contact/index.html", "use": "@vercel/static" },
+    { "src": "capabilities/index.html", "use": "@vercel/static" },
+    { "src": "work/*/index.html", "use": "@vercel/static" },
+    { "src": "css/**", "use": "@vercel/static" },
+    { "src": "js/**", "use": "@vercel/static" },
+    { "src": "img/**", "use": "@vercel/static" },
+    { "src": "favicon.png", "use": "@vercel/static" }
+  ]
 }
